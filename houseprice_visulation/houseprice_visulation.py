@@ -8,8 +8,8 @@ from datetime import datetime
 st.title("🏘️부동산 분석 플랫폼")
 
 # 데이터 불러오기
-data_df = pd.read_csv("아파트_매매지수_정제완료.csv")
-with open("시군구_세부수정.geojson", encoding='utf-8') as f:
+data_df = pd.read_csv("apartment_price.csv")
+with open("region_detail.geojson", encoding='utf-8') as f:
     map_data = json.load(f)
 
 # 날짜 정리
