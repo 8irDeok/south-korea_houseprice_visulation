@@ -72,7 +72,7 @@ if menu_sel == "📈증감률 지도":
     ).add_to(folium_map)
 
     st.subheader("🗺️ 지도")
-    st_folium(folium_map, width=1000, height=700)
+    st_folium(folium_map, width=700, height=500)
 
     st.subheader("📊 데이터")
     st.dataframe(change_df.sort_values(by='증감률', ascending=False))
